@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOS calculator copy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="screen"></div>
+      <div class="calculator">
+        <div class="button grey" onclick="clearDisplay()">AC</div>
+        <div class="button grey" onclick="">+/-</div>
+        <div class="button grey" onclick="getOperator('%')">%</div>
+        <div class="button orange" onclick="getOperator('/')">/</div>
+        <div class="button" onclick="getNumber(7)">7</div>
+        <div class="button" onclick="getNumber(8)">8</div>
+        <div class="button" onclick="getNumber(9)">9</div>
+        <div class="button orange" onclick="getOperator('*')">*</div>
+        <div class="button" onclick="getNumber(4)">4</div>
+        <div class="button" onclick="getNumber(5)">5</div>
+        <div class="button" onclick="getNumber(6)">6</div>
+        <div class="button orange" onclick="getOperator('-')">-</div>
+        <div class="button" onclick="getNumber(1)">1</div>
+        <div class="button" onclick="getNumber(2)">2</div>
+        <div class="button" onclick="getNumber(3)">3</div>
+        <div class="button orange" onclick="getOperator('+')">+</div>
+        <div class="button zero" onclick="getNumber(0)">0</div>
+        <div class="button" onclick="">.</div>
+        <div class="button orange" onclick="calculateEquals()">=</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
